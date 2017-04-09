@@ -98,7 +98,7 @@ h1 {
 
 #last-groomsman {
   width: 100%;
-  height: 40vmax;
+  min-height: 40vmax;
 }
 
 #last-bridesmaid {
