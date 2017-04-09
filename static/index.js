@@ -103,6 +103,7 @@ function unhighlightIcon(iconId) {
 $(window).resize(reposition);
 $(function() {
     setTimeout(reposition, 20);
+    setTimeout(reposition, 200);  // Make sure this runs.
     $('.menu-item')
         .hover(
             function() {
