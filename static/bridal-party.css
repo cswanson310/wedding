@@ -1,21 +1,21 @@
 #header {
-  height: 12vmin;
+  height: 12vmax;
 }
 
 h1 {
   font: 5vmin florence;
-  padding: 1vmin 0 0 1vmin;
+  padding: 1vmax 0 0 1vmax;
 }
 
 #page-menu {
-  margin-top: 1vmin;
+  margin-top: 1vmax;
 }
 
 #page-menu li {
   list-style-type: none;
   display: inline-block;
-  padding: 1vmin;
-  font: 3vmin florence;
+  padding: 1vmax;
+  font: 3.6vmin florence;
 }
 
 #page-menu li:hover {
@@ -29,8 +29,8 @@ h1 {
 }
 
 #group-shots {
-  height: 65vmin;
-  margin-bottom: 18vmin;
+  height: 65vmax;
+  margin-bottom: 18vmax;
   width: 100%;
   position: relative;
   text-align: center;
@@ -41,11 +41,12 @@ h1 {
 #sections {
   overflow-y: scroll;
   overflow-x: hidden;
-  height: 86vmin;
+  height: 86vmax;
 }
 
 .group-shot {
-  top: -25%;
+  top: 25%;
+  left: 25%;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -55,7 +56,9 @@ h1 {
 
 .group-shot img {
   max-height: 150%;
-  min-height: 125%;
+  max-width: 150%;
+  margin-left: -25%;
+  margin-top: -25%;
   z-index: 0;
 }
 
@@ -72,8 +75,8 @@ h1 {
   background: #777;
   display: inline-block;
   border-radius: 100%;
-  width: 1vmin;
-  height: 1vmin;
+  width: 1vmax;
+  height: 1vmax;
   z-index: 3;
 }
 
@@ -87,15 +90,15 @@ h1 {
 
 .bridesmaid, .groomsman {
   display: inline-block;
-  margin: 3vmin 4%;
+  margin: 3vmax 4%;
   padding: 0;
   width: 40%;
-  height: 20vmin;
+  min-height: 20vmax;
 }
 
 #last-groomsman {
   width: 100%;
-  height: 40vmin;
+  height: 40vmax;
 }
 
 #last-bridesmaid {
@@ -110,14 +113,14 @@ h1 {
 
 .bridesmaid img, .groomsman img {
   border-radius: 100%;
-  width: 20vmin;
-  height: 20vmin;
+  width: 20vmax;
+  height: 20vmax;
   float: left;
-  padding-right: 2vmin;
+  padding-right: 2vmax;
 }
 
 .bridesmaid p, .groomsman p {
-  font: 3vmin florence, sans-serif;
+  font: 3vmax florence, sans-serif;
   font-weight: 500;
   color: rgb(11, 42, 91);
   margin: 0;
