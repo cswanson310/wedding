@@ -100,4 +100,5 @@ $(function() {
         .on('scroll', function() {
             resetActive();
         });
+    $('#bridal-li').addClass('active-page');
 });

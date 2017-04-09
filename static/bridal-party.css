@@ -7,25 +7,25 @@ h1 {
   padding: 1vmin 0 0 1vmin;
 }
 
-#menu {
-  height: 10vmin;
-  margin: 1vmin 0 0 0;
+#page-menu {
+  margin-top: 1vmin;
 }
 
-#menu li {
+#page-menu li {
   list-style-type: none;
   display: inline-block;
   padding: 1vmin;
   font: 3vmin florence;
 }
 
-#menu li:hover {
+#page-menu li:hover {
   cursor: pointer;
   color: #fff;
 }
 
 .active-section {
   color: #fff;
+  text-decoration: underline;
 }
 
 #group-shots {
@@ -48,7 +48,6 @@ h1 {
   top: -25%;
   width: 100%;
   height: 100%;
-  display: inline-block;
   position: absolute;
   left: 0;
   z-index: 0;
@@ -85,11 +84,23 @@ h1 {
 .active {
   background: #ddd;
 }
+
 .bridesmaid, .groomsman {
   display: inline-block;
-  margin: 5vmin 4%;
+  margin: 3vmin 4%;
   padding: 0;
   width: 40%;
+  height: 20vmin;
+}
+
+#last-groomsman, #last-bridesmaid {
+  width: 100%;
+}
+
+.groomsman.last, .bridesmaid.last {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .bridesmaid img, .groomsman img {

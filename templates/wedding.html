@@ -1,4 +1,10 @@
-{% extends 'layout.html' %}
+{% extends 'menu_bar.html' %}
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" href="static/wedding.css" type="text/css">
+  <script src="static/wedding.js" type=text/javascript></script>
+{% endblock %}
 {% block content %}
+{{ super() }}
 <h1>TODO</h1>
 {% endblock %}

@@ -1,18 +1,18 @@
-{% extends 'layout.html' %}
+{% extends 'menu_bar.html' %}
 {% block head %}
   {{ super() }}
   <link rel="stylesheet" href="static/bridal-party.css" type="text/css">
   <script src="static/bridal-party.js" type=text/javascript></script>
 {% endblock %}
 {% block content %}
-  <div id='header'>
-    <h1>THE BRIDAL PARTY</h1>
-    <ul id='menu'>
+  {% block header %}
+    {{ super() }}
+    <ul id='page-menu'>
       <li id='group-link' class='menu-selector active-section'>GROUP PHOTOS</li>
       <li id='bridesmaids-link' class='menu-selector'>BRIDESMAIDS</li>
       <li id='groomsman-link'class='menu-selector'>GROOMSMEN</li>
     </ul>
-  </div>
+  {% endblock %}
   <div id='sections'>
     <div id='group-shots'>
       <ul id='group-selector' class='selector'>
@@ -39,12 +39,7 @@
       </div>
     </div>
     <div id='bridesmaids'>
-      <h1 id='bridesmaids-header'>─────BRIDESMAIDS─────</h1>
-      <div id='bridesmaid-0' class='bridesmaid'>
-        <img src="static/images/lindsay.jpg" alt='Lindsay MacGillivray'/>
-        <h2 class='bridesmaid-name'>Lindsay MacGillivray</h2>
-        <p>Some text about Lindsay. Blah blah lorem ipsem and what not. The quick brown fox jumped over the lazy dog.</p>
-      </div>
+      <h1 id='bridesmaids-header'>───── BRIDESMAIDS ─────</h1>
       <div id='bridesmaid-1' class='bridesmaid'>
         <img src="static/images/megan.jpg" alt='Megan MacGillivray'/>
         <h2 class='bridesmaid-name'>Megan MacGillivray</h2>
@@ -75,18 +70,15 @@
         <h2 class='bridesmaid-name'>Aurora Parlagrec</h2>
         <p>Some text about Aurora. Blah blah lorem ipsem and what not. The quick brown fox jumped over the lazy dog.</p>
       </div>
-      <div id='bridesmaid-7' class='bridesmaid'>
-        <img src='static/images/olivia.jpg' alt='Olivia Bello' />
-        <h2 class='bridesmaid-name'>Olivia Bello</h2>
-        <p>Some text about Olivia. Blah blah lorem ipsem and what not. The quick brown fox jumped over the lazy dog.</p>
+      <div id='last-bridesmaid'>
+        <div id='bridesmaid-7' class='bridesmaid last'>
+          <img src='static/images/olivia.jpg' alt='Olivia Bello' />
+          <h2 class='bridesmaid-name'>Olivia Bello</h2>
+          <p>Some text about Olivia. Blah blah lorem ipsem and what not. The quick brown fox jumped over the lazy dog.</p>
+        </div>
       </div>
     <div id='groomsmen'>
-      <h1 id='groomsmen-header'>─────GROOMSMEN─────</h1>
-      <div id='groomsman-0' class='groomsman'>
-        <img src="static/images/charlie.jpg" alt='Charlie Swanson'/>
-        <h2 class='groosman-name'>Charlie Swanson</h2>
-        <p>Some text about Megan. Blah blah lorem ipsem and what not. The quick brown fox jumped over the lazy dog.</p>
-      </div>
+      <h1 id='groomsmen-header'>───── GROOMSMEN ─────</h1>
       <div id='groomsman-1' class='groomsman'>
         <img src='static/images/noel.jpg' alt='Noel Swanson' />
         <h2 class='groosman-name'>Noel Swanson</h2>
@@ -117,12 +109,13 @@
         <h2 class='groosman-name'>Kyle Landau</h2>
         <p>Some text about Megan. Blah blah lorem ipsem and what not. The quick brown fox jumped over the lazy dog.</p>
       </div>
-      <div id='groomsman-7' class='groomsman'>
-        <img src='static/images/alex.jpg' alt='Alex Smith' />
-        <h2 class='groosman-name'>Alex Smith</h2>
-        <p>Some text about Megan. Blah blah lorem ipsem and what not. The quick brown fox jumped over the lazy dog.</p>
+      <div id='last-groosman'>
+        <div id='groomsman-7' class='groomsman last'>
+          <img src='static/images/alex.jpg' alt='Alex Smith' />
+          <h2 class='groosman-name'>Alex Smith</h2>
+          <p>Some text about Megan. Blah blah lorem ipsem and what not. The quick brown fox jumped over the lazy dog.</p>
+        </div>
       </div>
-    </div>
     </div>
   </div>
 {% endblock %}

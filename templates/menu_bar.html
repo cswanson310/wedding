@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+{% block content %}
+  <div id='header'>
+    {% block header %}
+      <div id='menu-bar'>
+        <ul id='menu-list'>
+          <li class='menu-item' id='home-li'>
+            <a class='menu-bar-link' href='/'>HOME</a>
+          </li>
+          <li class='menu-item' id='cmu-li'>
+            <a class='menu-bar-link' href={{ url_for('meeting') }}>HOW WE MET</a>
+          </li>
+          <li class='menu-item' id='wedding-li'>
+            <a class='menu-bar-link' href={{ url_for('wedding') }}>THE WEDDING</a>
+          </li>
+          <li class='menu-item' id='proposal-li'>
+            <a class='menu-bar-link' href={{ url_for('proposal') }}>THE PROPOSAL</a>
+          </li>
+          <li class='menu-item' id='registry-li'>
+            <a class='menu-bar-link'
+              href='https://www.blueprintregistry.com/registry/Lindsay-Charlie'>REGISTRY</a>
+          </li>
+          <li class='menu-item' id='bridal-li'>
+            <a class='menu-bar-link'
+              href={{ url_for('bridal_party') }}>BRIDAL PARTY</a>
+          </li>
+        </ul>
+      </div>
+    {% endblock %}
+  </div>
+{% endblock %}
