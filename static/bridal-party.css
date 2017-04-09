@@ -1,0 +1,117 @@
+#header {
+  height: 12vmin;
+}
+
+h1 {
+  font: 5vmin florence;
+  padding: 1vmin 0 0 1vmin;
+}
+
+#menu {
+  height: 10vmin;
+  margin: 1vmin 0 0 0;
+}
+
+#menu li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 1vmin;
+  font: 3vmin florence;
+}
+
+#menu li:hover {
+  cursor: pointer;
+  color: #fff;
+}
+
+.active-section {
+  color: #fff;
+}
+
+#group-shots {
+  height: 65vmin;
+  margin-bottom: 18vmin;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  background: rgba(200, 200, 200, 0.5);
+}
+
+#sections {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 70vmin;
+}
+
+.group-shot {
+  top: -25%;
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+}
+
+.group-shot img {
+  max-height: 150%;
+  min-height: 125%;
+  z-index: 0;
+}
+
+#group-selector {
+  position: absolute;
+  z-index: 3;
+  bottom: 1%;
+  width: 30%;
+  margin: 0 35%;
+  padding: 0;
+}
+
+.group-selector-elem {
+  background: #777;
+  display: inline-block;
+  border-radius: 100%;
+  width: 1vmin;
+  height: 1vmin;
+  z-index: 3;
+}
+
+.group-selector-elem:hover {
+  cursor: pointer;
+}
+
+.active {
+  background: #ddd;
+}
+.bridesmaid, .groomsman {
+  display: inline-block;
+  margin: 5vmin 4%;
+  padding: 0;
+  width: 40%;
+}
+
+.bridesmaid img, .groomsman img {
+  border-radius: 100%;
+  width: 20vmin;
+  height: 20vmin;
+  float: left;
+  padding-right: 2vmin;
+}
+
+.bridesmaid p, .groomsman p {
+  font: 3vmin florence, sans-serif;
+  font-weight: 500;
+  color: rgb(11, 42, 91);
+  margin: 0;
+}
+
+.bridesmaid-name, .groomsman-name {
+  padding: 0;
+}
+
+#bridesmaids-header, #groomsmen-header {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
