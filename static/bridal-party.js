@@ -43,8 +43,10 @@ $(function() {
         .on('click', function() {
             loop = false;
             let nextFrame = Number($(this).attr('group-num'));
-            let direction = nextFrame < activeFrame ? 'left' : 'right';
-            render(activeFrame, nextFrame, 500, direction);
+            if (nextFrame != activeFrame) {
+                let direction = nextFrame < activeFrame ? 'left' : 'right';
+                render(activeFrame, nextFrame, 500, direction);
+            }
         });
     $(document)
         .on('keydown', function(event) {
