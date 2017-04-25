@@ -1,10 +1,40 @@
 {% extends 'menu_bar.html' %}
 {% block head %}
   {{ super() }}
-  <link rel="stylesheet" href="static/proposal.css" type="text/css">
+  <link rel="stylesheet" href="static/meeting.css" type="text/css">
   <script src="static/proposal.js" type=text/javascript></script>
 {% endblock %}
 {% block content %}
 {{ super() }}
-<h1>TODO</h1>
+<div id='story-wrapper'>
+  <div id='story'>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;Charlie and Lindsay met at a mutual friend's party while studying at Carnegie Mellon,
+    and discovered they really liked each other! Lindsay told Charlie that she was from Maine, so
+    Charlie proceeded to draw everything he knew about Maine on Lindsay's arm. This included, and
+    was very possibly limited to, a pine tree, snowflakes, and a moose.
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;Some time passed without another encounter, but eventually Lindsay and Charlie found
+    themselves stranded with 10 of their friends in Times Square on New Years eve.
+    <img id='times-square' class='inline-img' src='static/images/times-square.jpg' />
+    &nbsp;&nbsp;&nbsp;&nbsp;They received another hint from the universe when they discovered they had packed the same
+    pair of L.L. Bean boots. Everyone had a great night, but Lindsay took off the next morning on a
+    flight to Israel, so that didn't lead anywhere.
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;Lindsay and Charlie were both friends with a group of people including Anshul, Sabrina,
+    and Zack, and they found (or made) more opportunities for that group to get together that
+    spring. This included a hiking excursion during which Charlie locked everyone out of the car and
+    they had to wait for AAA, and a less strenuous trip to an apple orchard around Pittsburgh.
+    <img id='donuts' class='inline-img' src='static/images/donuts.jpg' />
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;Later that spring, Charlie invited a group of friends to spend the weekend at his
+    Grandparent's house in Barnes, PA, about 3 hours north of Pittsburgh. They spent a fantastic day in
+    the snow.
+    <img id='sled-pre' class='inline-img' src='static/images/sled_pre.jpg' />
+    &nbsp;&nbsp;&nbsp;&nbsp;Just really perfected the sledding techniques.
+    <img id='sled-post' class='inline-img' src='static/images/sled_post.jpg' />
+    &nbsp;&nbsp;&nbsp;&nbsp;Eventually, with a little prodding from Alex, Lindsay and Charlie hit it off and shared their
+    first kiss in the cabin while Zack accompanied the snowfall with some melodies on the Piano.
+    <img id='zack-marshmallow' class='inline-img' src='static/images/zack_marshmallow.jpg' />
+  </div>
+</div>
 {% endblock %}
