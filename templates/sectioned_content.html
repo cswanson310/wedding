@@ -1,0 +1,21 @@
+{% extends 'menu_bar.html' %}
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" href="static/sectioned_content.css" type="text/css">
+  <script src="static/sectioned_content.js" type="text/javascript"></script>
+{% endblock %}
+{% block content %}
+  {% block header %}
+    {{ super() }}
+    <ul id='page-menu'>
+      {% block section_links %}
+        <!-- enter li's here, with ids 'section-link-1', 'section-link-2', etc. -->
+      {% endblock %}
+    </ul>
+  {% endblock %}
+  <div id='sections'>
+    {% block sections %}
+      <!-- enter sections here, div's with ids 'section-1', 'section-2', etc. -->
+    {% endblock %}
+  </div>
+{% endblock %}

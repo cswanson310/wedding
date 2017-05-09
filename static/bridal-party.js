@@ -61,46 +61,5 @@ $(function() {
                 render(activeFrame, nextFrame(), 300);
             }
         });
-    function resetActive() {
-        $('.menu-selector').removeClass('active-section');
-        let sectionTop = Math.floor($('#sections').offset().top);
-        if (sectionTop < Math.floor($('#bridesmaids').offset().top)) {
-            $('#group-link').addClass('active-section');
-        } else if (sectionTop < Math.floor($('#groomsmen').offset().top)) {
-            $('#bridesmaids-link').addClass('active-section');
-        } else {
-            $('#groomsman-link').addClass('active-section');
-        }
-    }
-    $('#group-link')
-        .on('click', function() {
-            $('#sections').animate({scrollTop: 0}, 500, resetActive);
-        });
-    $('#bridesmaids-link')
-        .on('click', function() {
-            $('#sections')
-                .animate({
-                    scrollTop:
-                        Math.ceil(($('#bridesmaids').position().top + $('#sections').scrollTop()) -
-                                  $('#sections').position().top)
-                },
-                         500,
-                         resetActive);
-        });
-    $('#groomsman-link')
-        .on('click', function() {
-            $('#sections')
-                .animate({
-                    scrollTop:
-                        Math.ceil(($('#groomsmen').position().top + $('#sections').scrollTop()) -
-                                  $('#sections').position().top)
-                },
-                         500,
-                         resetActive);
-        });
-    $('#sections')
-        .on('scroll', function() {
-            resetActive();
-        });
     $('#bridal-li').addClass('active-page');
 });

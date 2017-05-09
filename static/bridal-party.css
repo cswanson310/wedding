@@ -1,32 +1,6 @@
-#header {
-  height: 12vh;
-}
-
 h1 {
   font: 5vmin florence;
   padding: 1vh 0 0 1vw;
-}
-
-#page-menu {
-  height: 5vh;
-  margin: 1vh 0;
-}
-
-#page-menu li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 1vw;
-  font: 3.6vmin florence;
-}
-
-#page-menu li:hover {
-  cursor: pointer;
-  color: #fff;
-}
-
-.active-section {
-  color: #fff;
-  text-decoration: underline;
 }
 
 #group-shots {
@@ -37,12 +11,6 @@ h1 {
   text-align: center;
   overflow: hidden;
   background: rgba(200, 200, 200, 0.5);
-}
-
-#sections {
-  overflow-y: scroll;
-  overflow-x: hidden;
-  height: 86vh;
 }
 
 .group-shot {
