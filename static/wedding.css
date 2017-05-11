@@ -1,5 +1,184 @@
-#sections div {
+#sections {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.section-title {
+  margin-top: 2vh;
+}
+
+.section-div {
+  width: 100%;
+}
+
+.details {
+  width: 45%;
+  display: inline-block;
+}
+
+.inline-map-text {
+  vertical-align: top;
+  font: 3vmin florence, sans-serif;
+  font-weight: 500;
+  color: rgb(11, 42, 91);
+  margin: 0;
+  line-height: 3.5vmin;
+  margin-top: 3vh;
+}
+
+#tent {
+  font: 4vmin rockeby;
+  margin: 0;
+  padding: 0;
+  margin-top: 1vh;
+  margin-left: 5vw;
+  line-height: 1;
+}
+
+.ceremony-link {
+  text-decoration: none;
+  color: black;
+}
+
+.ceremony-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#tent-details {
+  font: 3vmin florence, sans-serif;
+  font-weight: 500;
+  color: rgb(11, 42, 91);
+  margin: 0;
+}
+
+#wildcat-summit-div {
+  margin: 2vh 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20vh;
+}
+
+#wildcat-summit-div p {
+  font: 3vmin rockeby, sans-serif;
+  line-height: 2vh;
+}
+
+#wildcat-summit {
+  height: 100%;
+  width: 100%;
+}
+
+#ceremony-map, #lodging-map {
+  vertical-align: top;
+  width: 45%;
+  height: 50vh;
+  margin: 4%;
+  display: inline-block;
+}
+
+#lodging-pics-div {
+  width: 100%;
+  height: 100%;
+  background: rgba(256, 256, 256, 0.85);
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 1vmin;
+  padding: 1% 1% 0 1%;
+}
+
+#lodging-pics-div .inline-img {
+  display: inline-block;
+  width: 49%;
+}
+
+#agenda-table {
+  margin-top: 2vh;
+  width: 100%;
+  border: 2px solid black;
+  height: 60vh;
+  border-collapse: collapse;
+}
+
+.agenda-header-entry {
+  border: 2px solid black;
+  font: 3.8vmin florence, sans-serif;
+  padding-top: 1vmin;
+  padding-bottom: 1vmin;
+}
+
+.day {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  width: 24%;
+  vertical-align: top;
+  padding: 0.5vmin;
+}
+
+.fake-morning-event {
+  height: 14vh;
+}
+
+.event {
+  margin-top: 4%;
+  background: rgba(256, 256, 256, 0.85);
+}
+
+.event-icon {
+  background: rgba(200, 200, 200, 1);
+  vertical-align: top;
+  font: 2vmin rockeby, sans-serif;
+  padding: 4px;
+  font-weight: 300;
+  height: 100%;
+  text-align: center;
+}
+
+.event-desc {
+  padding-top: 5px;
+  padding-left: 1%;
+  width: 100%;
+}
+
+.event-text {
+  font: 2.8vmin rockeby, sans-serif;
+  line-height: 2.8vh;
+  margin: 0;
+  padding-left: 1vw;
+}
+
+.event-location {
+  font: 1.8vmin monospace;
+  color: #333;
+  margin: 0;
+  padding-left: 1vmin;
+  margin-left: 1vmin;
+  border-left: 1px solid #aaa;
+  margin-bottom: 1vmin;
+}
+
+.event-location a {
+  text-decoration: none;
+  color: rgb(11, 42, 91);
+}
+
+.event-location a:hover {
+  text-decoration: underline;
+}
+
+#thursday, #friday {
+  vertical-align: bottom;
+}
+
+#saturday {
+  margin-top: 15%;
+}
+
+.day-detail td:first-child {
+  border-left: 0px solid black;
+}
+
+.day-detail td:last-child {
+  border-right: 0px solid black;
 }

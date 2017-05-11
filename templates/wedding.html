@@ -5,20 +5,163 @@
   <script src="static/wedding.js" type=text/javascript></script>
 {% endblock %}
 {% block section_links %}
-  <li id='section-link-1'>CEREMONY</li>
+  <li id='section-link-1'>EVENTS</li>
   <li id='section-link-2'>LODGING</li>
-  <li id='section-link-3'>ANOTHER</li>
+  <li id='section-link-3'>CEREMONY</li>
 {% endblock %}
 {% block sections %}
-  <div id='section-1'>
-    <img id='times-square' class='inline-img' src='static/images/times-square.jpg' />
+  <div id='section-1' class='section-div'>
+    <div id='agenda'>
+      <table id='agenda-table'>
+        <thead>
+          <tr>
+            <th class='agenda-header-entry'>Thu Sep 21st</th>
+            <th class='agenda-header-entry'>Fri Sep 22nd</th>
+            <th class='agenda-header-entry'>Sat Sep 23nd</th>
+            <th class='agenda-header-entry'>Sun Sep 24nd</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class='day-details'>
+            <td id='thursday' class='day'>
+              <table class='events-table'>
+                <tr class='event'>
+                  <td class='event-icon'><span>☾</span></td>
+                  <td class='event-desc'>
+                    <p class='event-text'>Early arrivals are welcome to stay in the rental houses</p>
+                    <p class='event-location'><a class='lodging-link' href='#lodging'>Locust Ln Rentals</a></p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td id='friday' class='day'>
+              <table class='events-table'>
+                <tr class='event'>
+                  <td class='event-icon'><p>6:30</p></td>
+                  <td class='event-desc'>
+                    <p class='event-text'>🎪 Welcome dinner</p>
+                    <p class='event-location'><a class='tent-link' href='#tent'>Tent</a></p>
+                  </td>
+                </tr>
+                <tr class='event'>
+                  <td class='event-icon'><p>8:00</p></td>
+                  <td class='event-desc'>
+                    <p class='event-text'>💃 Square Dance! 🕺</p>
+                    <p class='event-location'><a class='tent-link' href='#tent'>Tent</a></p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td id='saturday' class='day'>
+              <table class='events-table'>
+                <tr class='fake-morning-event'></tr>
+                <tr class='event'>
+                  <td class='event-icon'><p>1:15</td>
+                  <td class='event-desc'>
+                    <p class='event-text'>🚠 Depart for ceremony</p>
+                    <p class='event-location'>Allow time to ride to summit</p>
+                  </td>
+                </tr>
+                <tr class='event'>
+                    <td class='event-icon'><p>2:30</td>
+                    <td class='event-desc'>
+                      <a class='ceremony-link' href='#ceremony'>
+                        <p class='event-text'>👰🏻⛰ 🤵🏼Ceremony</p>
+                        <p class='event-location'>Wildcat mountain</p>
+                      </a>
+                    </td>
+                </tr>
+                <tr class='event'>
+                  <td class='event-icon'><p>🔜</p></td>
+                  <td class='event-desc'>
+                    <p class='event-text'>🍸 Cocktails</p>
+                    <p class='event-location'>Back in <a class='tent-link' href='#tent'>the tent</a></p>
+                  </td>
+                </tr>
+                <tr class='event'>
+                  <td class='event-icon'><span>☾</span></td>
+                  <td class='event-desc'>
+                    <p class='event-text'>🍾 Reception, Dinner, Dancing</p>
+                    <p class='event-location'><a class='tent-link' href='#tent'>Tent</a></p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td id='sunday' class='day'>
+              <table class='events-table'>
+                <tr class='event'>
+                  <td class='event-icon'><p>9:30</td>
+                  <td class='event-desc'>
+                    <p class='event-text'>🌮 Brunch 🥂</p>
+                    <p class='event-location'><a class='tent-link' href='#tent'>Tent</a></p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
-  <div id='section-2'>
-    <h1>LODGING</h1>
-    <img id='times-square' class='inline-img' src='static/images/times-square.jpg' />
+  <div id='section-2' class='section-div'>
+    <div id='lodging'>
+      <h1 class='section-title'>LODGING</h1>
+      <div id='lodging-map'>
+        <iframe
+          width=100%
+          height=100%
+          frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCt8zSyhX9EOd-1w-TIQI0tlyZLuRrwGrs
+            &q=Locust+Lane,North+Conway,NH&zoom=11" allowfullscreen>
+        </iframe>
+      </div>
+      <div id='lodging-details' class='details'>
+        <p class='inline-map-text'>
+          &nbsp;&nbsp;&nbsp;&nbsp;We have reserved many rental houses, all located near each other
+          on Locust Lane. We encourage all guests to stay within the rental houses, where
+          everything except the ceremony will be within walking distance. If you are more
+          comfortable arranging for your own lodging, you are welcome to do so, but we would love
+          if everyone would join us on-site.
+          &nbsp;&nbsp;&nbsp;&nbsp;The tent will be on the rental property, and remain up all
+          weekend. If you are staying with us at the rentals, it will be within walking distance.
+        </p>
+        <div id='lodging-pics-div'>
+          <img id='hottub' class='inline-img' src='static/images/hot_tub.jpg' />
+          <img id='large-house' class='inline-img' src='static/images/large_house.jpg' />
+          <img id='dining-table' class='inline-img' src='static/images/dining_table.jpg' />
+          <img id='atrium' class='inline-img' src='static/images/atrium.jpg' />
+        </div>
+      </div>
+    </div>
+    <h3 id='tent'>THE TENT</h3>
+    <p class='inline-map-text'>
+      &nbsp;&nbsp;&nbsp;&nbsp;The tent will be on the rental property, and remain up all
+      weekend. If you are staying with us at the rentals, it will be within walking distance.
+    </p>
   </div>
-  <div id='section-3'>
-    <h1>ANOTHER</h1>
-    <img id='times-square' class='inline-img' src='static/images/times-square.jpg' />
+  <div id='section-3' class='section-div'>
+    <div id='ceremony'>
+      <h1 class='section-title'>CEREMONY</h1>
+      <div id='ceremony-details' class='details'>
+        <p class='inline-map-text'>
+          &nbsp;&nbsp;&nbsp;&nbsp;The ceremony will be held at Wildcat Mountain, all the way at the top! There will be
+          gondolas to take you there. Should it rain, the ceremony will be in the logde at the base
+          of the mountain.
+        </p>
+        <div id='wildcat-summit-div'>
+          <img id='wildcat-summit' class='inline-img' src='static/images/wildcat-summit.jpg' />
+          <p>(We're counting on less snow in September)</p>
+        </div>
+      </div>
+      <div id='ceremony-map'>
+        <iframe
+          width=100%
+          height=100%
+          frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCt8zSyhX9EOd-1w-TIQI0tlyZLuRrwGrs
+            &q=Wildcat+Mountain,NH&zoom=9" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
   </div>
 {% endblock %}
