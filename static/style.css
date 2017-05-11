@@ -4,6 +4,21 @@
 }
 
 @font-face {
+  font-family: dinot;
+  src: url('fonts/DINOT.otf');
+}
+
+@font-face {
+  font-family: dinot-light;
+  src: url('fonts/DINOT-Light.otf');
+}
+
+@font-face {
+  font-family: abel;
+  src: url('fonts/Abel-Regular.otf');
+}
+
+@font-face {
   font-family: rockeby;
   src: url('fonts/RockebyCd-Light.otf');
 }
@@ -56,7 +71,7 @@ h1 {
 
 h2 {
   margin: 0;
-  font: 5vmin rockeby;
+  font: 5vmin florence;
   font-weight: 700;
 }
 
@@ -74,11 +89,6 @@ h2 {
   height: auto;
   width: auto;
   display: inline-block;
-}
-
-#proposal {
-  height: 6%;
-  padding: 10px;
 }
 
 .states-anchored {
@@ -118,7 +128,7 @@ h2 {
 .menu-item {
   display: inline-block;
   font-size: 3vmin;
-  padding: 0 1vw;
+  padding: 0.6vh 1vw;
 }
 
 .menu-link {
@@ -138,8 +148,8 @@ h2 {
 }
 
 .menu-bar-link {
-  font: 3vmin rockeby;
-  font-weight: 900;
+  font: 3vmin abel;
+  line-height: 3vmin;
   text-decoration: none;
   color: #888;
   padding: 0;

@@ -19,7 +19,7 @@
 
 .inline-map-text {
   vertical-align: top;
-  font: 3vmin florence, sans-serif;
+  font: 3vmin dinot, sans-serif;
   font-weight: 500;
   color: rgb(11, 42, 91);
   margin: 0;
@@ -47,8 +47,8 @@
 }
 
 #tent-details {
-  font: 3vmin florence, sans-serif;
-  font-weight: 500;
+  font: 3vmin dinot-light, sans-serif;
+  font-weight: 200;
   color: rgb(11, 42, 91);
   margin: 0;
 }
@@ -84,7 +84,7 @@
   background: rgba(256, 256, 256, 0.85);
   text-align: center;
   vertical-align: middle;
-  margin-top: 1vmin;
+  margin-top: 2vh;
   padding: 1% 1% 0 1%;
 }
 
@@ -103,7 +103,7 @@
 
 .agenda-header-entry {
   border: 2px solid black;
-  font: 3.8vmin florence, sans-serif;
+  font: 3.8vmin dinot, sans-serif;
   padding-top: 1vmin;
   padding-bottom: 1vmin;
 }
