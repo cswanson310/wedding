@@ -6,6 +6,7 @@
 
 .section-title {
   margin-top: 2vh;
+  margin-bottom: 3vh;
 }
 
 .section-div {
@@ -24,24 +25,24 @@
   color: rgb(11, 42, 91);
   margin: 0;
   line-height: 3.5vmin;
-  margin-top: 3vh;
 }
 
-#tent {
-  font: 4vmin rockeby;
+.section-subheading {
+  font: 4vmin abel;
   margin: 0;
   padding: 0;
   margin-top: 1vh;
   margin-left: 5vw;
   line-height: 1;
+  margin-bottom: 2vh;
 }
 
-.ceremony-link {
+.schedule-link {
   text-decoration: none;
   color: black;
 }
 
-.ceremony-link:hover {
+.schedule-link:hover {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -57,11 +58,10 @@
   margin: 2vh 0;
   width: 100%;
   text-align: center;
-  padding-bottom: 20vh;
 }
 
 #wildcat-summit-div p {
-  font: 3vmin rockeby, sans-serif;
+  font: 3vmin abel, sans-serif;
   line-height: 2vh;
 }
 
@@ -156,6 +156,10 @@
   margin-left: 1vmin;
   border-left: 1px solid #aaa;
   margin-bottom: 1vmin;
+}
+
+.section-div:last-child {
+  padding-bottom: 20vh;
 }
 
 .event-location a {
