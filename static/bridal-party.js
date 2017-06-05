@@ -5,6 +5,9 @@ $(function() {
     function nextFrame() {
         return (activeFrame + 1) % nFrames;
     }
+    function prevFrame() {
+        return (activeFrame + nFrames - 1) % nFrames;
+    }
     function render(currentFrame, nextFrame, timeout, direction) {
         timeout = timeout || 900;
         direction = direction || 'right';
@@ -35,10 +38,23 @@ $(function() {
     function renderLoop() {
         if (loop) {
             render(activeFrame, nextFrame());
-            setTimeout(renderLoop, 3000);
+            setTimeout(renderLoop, 4000);
         }
     }
     setTimeout(renderLoop, 3000);
+    $('#group-shots')
+        .on('click', function(e) {
+            let direction, next;
+            if (e.originalEvent.offsetX > ($('#group-shots').width() / 2)) {
+                direction = 'right';
+                next = nextFrame();
+            } else {
+                direction = 'left';
+                next = prevFrame();
+            }
+            loop = false;
+            render(activeFrame, next, 500, direction);
+        });
     $('.group-selector-elem')
         .on('click', function() {
             loop = false;

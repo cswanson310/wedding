@@ -5,7 +5,7 @@ h1 {
 
 #group-shots {
   height: 65vh;
-  margin-bottom: 18vh;
+  margin-bottom: 13vh;
   width: 100%;
   position: relative;
   text-align: center;
@@ -20,13 +20,18 @@ h1 {
   z-index: 0;
 }
 
-.group-shot img {
+.group-shot-img {
   display: block;
-  max-height: 150%;
-  max-width: 150%;
-  margin: 0 auto;
-  margin-top: -15%;
+  max-height: 125%;
+  max-width: 100%;
+  margin: auto;
   z-index: 0;
+}
+
+.group-shot-img img {
+  display: block;
+  width: 80%;
+  margin: auto;
 }
 
 #group-selector {
@@ -49,6 +54,18 @@ h1 {
 
 .group-selector-elem:hover {
   cursor: pointer;
+}
+
+.img-desc {
+  font: 3vmin dinot-bold, sans-serif;
+  color: #fff;
+  padding: 0;
+  position: absolute;
+  z-index: 3;
+  bottom: 0%;
+  width: 50%;
+  text-align: left;
+  margin-left: 11%;
 }
 
 .active {
@@ -94,7 +111,7 @@ h1 {
 }
 
 .bridesmaid p, .groomsman p {
-  font: 2.4vmin dinot-light, sans-serif;
+  font: 2.4vmin dinot, sans-serif;
   font-weight: 500;
   color: rgb(11, 42, 91);
   margin: 0;
@@ -102,7 +119,7 @@ h1 {
 }
 
 .bridesmaid-name, .groomsman-name {
-  font: 4vmin rockeby;
+  font: 4vmin dinot-bold, sans-serif;
   line-height; 6vh;
   padding: 0;
 }

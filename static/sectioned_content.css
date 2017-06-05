@@ -9,13 +9,18 @@ h1 {
 
 #page-menu {
   height: 5vh;
-  margin: 1vh 0;
+  margin: 0 5vw;
+  border-bottom: 2px solid #666;
+  padding: 0;
 }
 
 #page-menu li {
   list-style-type: none;
   display: inline-block;
-  padding: 1vw;
+  margin: 0;
+  padding: 0 1vw;
+  padding-top: 1vh;
+  margin-bottom: 1vh;
   font: 3.6vmin florence;
 }
 
@@ -26,7 +31,7 @@ h1 {
 
 .active-section {
   color: #fff;
-  text-decoration: underline;
+  border-bottom: 6px solid #fff;
 }
 
 #sections {

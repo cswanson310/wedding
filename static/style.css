@@ -14,6 +14,11 @@
 }
 
 @font-face {
+  font-family: dinot-bold;
+  src: url('fonts/DINOT-Bold.otf');
+}
+
+@font-face {
   font-family: abel;
   src: url('fonts/Abel-Regular.ttf');
 }
