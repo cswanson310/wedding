@@ -20,6 +20,30 @@ h1 {
   z-index: 0;
 }
 
+#charlie-megan {
+  margin-top: -7%;
+}
+
+#lindsay-ian {
+  margin-top: -7%;
+}
+
+#jake-lindsay-charlie {
+  margin-top: -10%;
+}
+
+#zack-gondola {
+  margin-top: -10%;
+}
+
+#aurora-lindsay-angela {
+  margin-top: -8%;
+}
+
+#sabrina-katy {
+  margin-top: -8%;
+}
+
 .group-shot-img {
   display: block;
   max-height: 125%;
@@ -56,16 +80,22 @@ h1 {
   cursor: pointer;
 }
 
-.img-desc {
-  font: 3vmin dinot-bold, sans-serif;
-  color: #fff;
+.img-desc-div {
   padding: 0;
   position: absolute;
   z-index: 3;
   bottom: 0%;
-  width: 50%;
+  width: 40%;
   text-align: left;
   margin-left: 11%;
+}
+
+.img-desc-text {
+  display: inline-block;
+  font: 3vmin dinot-bold, sans-serif;
+  color: #fff;
+  padding: 0 1vw;
+  background: rgba(40, 40, 40, 0.4);
 }
 
 .active {
