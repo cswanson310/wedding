@@ -1,0 +1,66 @@
+{% extends 'sectioned_content.html' %}
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" href="static/wedding.css" type="text/css">
+  <script src="static/things_todo.js" type=text/javascript></script>
+{% endblock %}
+{% block section_links %}
+  <li id='section-link-1'>HIKING</li>
+  <li id='section-link-2'>SHOPPING</li>
+  <li id='section-link-3'>ATV RENTALS</li>
+  <li id='section-link-4'>WATER PARK</li>
+  <li id='section-link-5'>SCENIC RAILWAY</li>
+{% endblock %}
+{% block sections %}
+  <div id='section-1' class='section-div'>
+    <h1 class='section-title'>HIKING</h1>
+    <div id='lodging-map'>
+      <iframe
+          width=100%
+          height=100%
+          frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCt8zSyhX9EOd-1w-TIQI0tlyZLuRrwGrs
+          &q=Locust+Lane,North+Conway,NH&zoom=11" allowfullscreen>
+      </iframe>
+    </div>
+    <div id='hiking-details' class='details'>
+        <p class='inline-map-text'>
+        &nbsp;&nbsp;&nbsp;&nbsp;Located in the middle of the White Moutains, North Conway is known for lots of incredible hiking trails. Some of our favorites include: Black Cap, Kersage, Cathedral Ledge, and Diana's Baths. There are many different levels of hikes from a short walk for the novice hiker to challenging hikes. For those looking for a full day hike, Mt. Washington is a short drive from North Conway. We have saved some of our favorite hikes on the map to the left.
+        </p>
+    </div>
+  </div>
+  <div id='section-2' class='section-div'>
+    <h1 class='section-title'>SHOPPING</h1>
+    <p class='inline-map-text'>&nbsp;&nbsp;&nbsp;&nbsp;North Conway is home to the Settler's Green
+    Outlets. Thanks to tax free shopping in New Hampshire, these outlets are a destination for many
+    vistors in the Valley. 15 mintues from where Lindsay grew up, she spent a good amount of time
+    with friends here in high school! You can use this link to find out more about stores, hours,
+    etc. Besides the outlets, there are many other stores in North Conway including cute NH gift
+    shops like Zeb's in the middle of town.
+    </p>
+  </div>
+  <div id='section-3' class='section-div'>
+    <h1 class='section-title'>ATV RENTALS</h1>
+    <p class='inline-map-text'>&nbsp;&nbsp;&nbsp;&nbsp;Looking for some adventure in the Mt.
+    Washington Valley? Terry and Sarah, Lindsay's parents, own an ATV Rental company. About thrity
+    minutes from our Lodging, the ATV Rentals offer a fun way to get out into the nature! You can
+    find out more about ATV-ing from the company website:
+    </p>
+  </div>
+  <div id='section-4' class='section-div'>
+    <h1 class='section-title'>WATERPARK</h1>
+    <p class='inline-map-text'>&nbsp;&nbsp;&nbsp;&nbsp;Linday's little brother, Ian, is very excited
+    about the fact that we will all be staying right next door to the Blue Lagoon Waterpark. Located
+    inside the Red Jacket Inn and Resort, this waterpark offers endless fun to kids of all ages.
+    </p>
+  </div>
+  <div id='section-5' class='section-div'>
+    <h1 class='section-title'>SCENIC RAILWAY</h1>
+    <p class='inline-map-text'>&nbsp;&nbsp;&nbsp;&nbsp;If you share Charlie's love for trains, you
+    might be interested to know that North Conway has it's very own scenic railway! With a few
+    different trips each day, this old-fashioned train snakes it way throughout the Valley,
+    offering superb views! Check out the train schedule here:'
+    </p>
+  </div>
+
+{% endblock %}

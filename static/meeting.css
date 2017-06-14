@@ -28,3 +28,15 @@
   width: 80%;
   margin: 2vh auto;
 }
+
+.side-by-sides {
+  display: block;
+  width: 80%;
+  margin: 2vh auto;
+}
+
+.side-by-sides img {
+  display: inline-block;
+  margin: 0 0.5vw;
+  width: 47%;
+}

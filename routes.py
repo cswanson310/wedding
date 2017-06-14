@@ -20,3 +20,7 @@ def proposal():
 @app.route('/bridal_party')
 def bridal_party():
     return render_template('bridal_party.html');
+
+@app.route('/things_todo')
+def things_todo():
+    return render_template('things_todo.html');
