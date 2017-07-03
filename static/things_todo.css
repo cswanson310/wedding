@@ -11,6 +11,7 @@
 
 .section-div {
   width: 100%;
+  min-height: 32vh;
 }
 
 .details {
@@ -222,3 +223,20 @@
 .day-detail td:last-child {
   border-right: 0px solid black;
 }
+
+.right-img, .left-img {
+  height: 20vh;
+  margin: 0 2vw;
+}
+
+.right-img {
+  float: right;
+  height: 20vh;
+}
+
+.left-img {
+  float: left;
+  height: 20vh;
+}
+
+

@@ -5,6 +5,7 @@ h1 {
 
 #group-shots {
   height: 55vmin;
+  min-height: 500px;
   margin-bottom: 13vh;
   width: 100%;
   position: relative;
@@ -21,27 +22,31 @@ h1 {
 }
 
 #lindsay-ian {
-  margin-top: -7%;
+  margin-top: -7vh;
+}
+
+#charlie-megan {
+  margin-top: -9vh;
 }
 
 #jake-lindsay-charlie {
-  margin-top: -10%;
+  margin-top: -10vh;
 }
 
 #zack-gondola {
-  margin-top: -10%;
+  margin-top: -10vh;
 }
 
 #aurora-lindsay-angela {
-  margin-top: -4%;
+  margin-top: -4vh;
 }
 
 #sabrina-katy {
-  margin-top: -8%;
+  margin-top: -8vh;
 }
 
 #charlie-mac-siblings {
-  margin-top: -8%;
+  margin-top: -17vh;
 }
 
 .group-shot-img {
