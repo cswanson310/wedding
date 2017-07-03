@@ -103,7 +103,10 @@ function unhighlightIcon(iconId) {
 $(window).resize(reposition);
 $(function() {
     setTimeout(reposition, 20);
-    setTimeout(reposition, 200);  // Make sure this runs.
+    setTimeout(reposition, 200);   // Make sure this runs.
+    setTimeout(reposition, 800);   // Make sure this runs.
+    setTimeout(reposition, 2000);  // Make sure this runs.
+    setTimeout(reposition, 4000);  // Make sure this runs.
     $('.menu-item')
         .hover(
             function() {
