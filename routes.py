@@ -1,5 +1,7 @@
-from flask import Flask, url_for, render_template
+from flask import Flask, url_for, render_template, jsonify, request
+import pymongo
 app = Flask(__name__)
+db = pymongo.MongoClient().wedding
 
 @app.route('/')
 def index():
@@ -24,3 +26,15 @@ def bridal_party():
 @app.route('/things_todo')
 def things_todo():
     return render_template('things_todo.html');
+
+@app.route('/table')
+def table():
+    return render_template('table.html');
+
+@app.route('/_name_search')
+def add_numbers():
+    name = request.args.get('name', '', type=str)
+    results = list(db.table_assignments.find({'name': {'$regex': '^' + name, '$options':
+        'i'}}, {'name': 1, 'table': 1, '_id': 0}).limit(10))
+    return jsonify(results=results)
+
