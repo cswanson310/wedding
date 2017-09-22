@@ -1,3 +1,13 @@
+@font-face {
+  font-family: florence;
+  src: url('fonts/Florence-Regular.otf');
+}
+
+@font-face {
+  font-family: abel;
+  src: url('fonts/Abel-Regular.ttf');
+}
+
 #title {
   font: 80px 'Fortunates December';
   text-align: center;
