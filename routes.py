@@ -38,3 +38,9 @@ def add_numbers():
         'i'}}, {'name': 1, 'table': 1, '_id': 0}).limit(10))
     return jsonify(results=results)
 
+@app.route('/table_group')
+def table_group():
+    table = request.args.get('table', 1, type=int)
+    results = list(db.table_assignments.find({'table': table}, {'name': 1, '_id': 0}))
+    return render_template('table_group.html', table=table, results=results);
+
