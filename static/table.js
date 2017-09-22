@@ -1,9 +1,8 @@
 $(function() {
     $('#name').focus();
     $('#name')
-        .on('keydown', function() {
+        .on('keyup', function() {
             if ($('#name').val()) {
-                console.log($('#name').val());
                 $.getJSON($SCRIPT_ROOT + '/_name_search', {name: $('#name').val()}, function(data) {
                     $('#results').empty();
                     let htmlString = '<ul>';

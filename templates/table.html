@@ -1,15 +1,16 @@
 <head>
-  {% block head %}
   <title>Charlie &amp; Lindsay</title>
   <script src={{ url_for('static', filename="jquery.js") }} type=text/javascript></script>
   <script type="text/javascript">
     var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
   </script>
   <script src={{ url_for('static', filename="table.js") }} type=text/javascript></script>
-  {% endblock %}
+  <link rel="stylesheet" href="static/table.css" type="text/css">
 </head>
 <body>
-  <h1>Find your table!</h1>
+  <div id'title-wrapper'>
+    <h1 id="title">Find Your Table!</h1>
+  </div>
   <input type="text" id="name" placeholder="type your name here"/>
   <div id="results">
   </div>

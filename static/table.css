@@ -1,0 +1,10 @@
+#title {
+  font: 48px 'Fortunates December';
+  text-align: center;
+  margin: auto 0;
+  width: 60vmin;
+}
+
+#title-wrapper: {
+  width: 100%;
+}

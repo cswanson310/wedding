@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: fortunates;
+  src: url('fonts/Fortunates-December.ttf');
+}
+
+@font-face {
   font-family: dinot;
   src: url('fonts/DINOT.otf');
 }
